@@ -7,83 +7,155 @@
     "about": "About"
   },
   "transparency": {
-    "title": "Incident Taxonomy",
-    "subtitle": "42 incident types across 6 categories",
-    "categories": {
-      "ACC": "Account Access",
-      "DAT": "Data & Privacy",
-      "FIN": "Financial",
-      "SUP": "Support",
-      "CON": "Content & Service",
-      "AI": "AI-Specific"
+    "hero": {
+      "badge": "Methodology",
+      "title": "Incident Taxonomy & Transparency Framework",
+      "subtitle": "42 incident types across 6 categories, scored by two levels of metrics and three AI models."
     },
-    "level1Title": "Level 1 — Universal Metrics",
-    "level1Desc": "Applied to every incident regardless of type",
-    "level2Title": "Level 2 — Contextual Metrics",
-    "level2Desc": "Automatically activated based on incident type",
-    "metrics": {
-      "tos_clarity": "Terms of Service Clarity",
-      "prior_notification": "Prior Notification",
-      "explicit_motivation": "Explicit Motivation",
-      "appeal_process": "Appeal Process",
-      "response_time": "Response Time",
-      "restitution": "Data / Money Restitution",
-      "public_precedent": "Public Precedent"
+    "categories": {
+      "ACC": {
+        "name": "Account Access",
+        "desc": "Suspensions, blocks, lockouts, deletions and other restrictions on a user's ability to access their own account."
+      },
+      "DAT": {
+        "name": "Data & Privacy",
+        "desc": "Breaches, unlawful processing, GDPR violations, undisclosed AI training and other data-handling failures."
+      },
+      "FIN": {
+        "name": "Financial",
+        "desc": "Unauthorized charges, refund refusals, billing errors, subscription traps and frozen funds."
+      },
+      "SUP": {
+        "name": "Support",
+        "desc": "Unresponsive support, bot loops with no human escalation, misinformation and language barriers."
+      },
+      "CON": {
+        "name": "Content & Service",
+        "desc": "Arbitrary moderation, undisclosed ToS changes, missing features, downtime and regional restrictions."
+      },
+      "AI": {
+        "name": "AI-Specific",
+        "desc": "Bias, hallucinations causing harm, undisclosed AI identity, automated decisions without appeal and safety failures."
+      }
     },
     "incidentTypes": {
-      "ACC_SUSPEND": "Account Suspension",
-      "ACC_BLOCK": "Account Block",
-      "ACC_LOCK": "Account Lockout",
-      "ACC_DELETE": "Account Deletion",
-      "ACC_ACCESS": "Data Access Denial",
-      "DAT_BREACH": "Data Breach",
-      "DAT_GDPR": "GDPR Violation",
-      "DAT_AI_TRAIN": "AI Training Without Consent",
-      "DAT_SHARE": "Unauthorized Data Sharing",
-      "DAT_RETAIN": "Excessive Data Retention",
-      "FIN_UNAUTH": "Unauthorized Charge",
-      "FIN_REFUND": "Refund Refusal",
-      "FIN_BILLING": "Billing Error",
-      "FIN_SUBSCRIP": "Subscription Issue",
-      "FIN_FREEZE": "Account Freeze with Funds",
-      "SUP_NORESPONSE": "No Support Response",
-      "SUP_BOT": "Bot Loop / No Human",
-      "SUP_MISINFO": "Support Misinformation",
-      "SUP_DELAY": "Excessive Support Delay",
-      "SUP_LANG": "Language Barrier in Support",
-      "CON_MODERATION": "Arbitrary Content Moderation",
-      "CON_REMOVAL": "Content Removal Without Notice",
-      "CON_TOS_CHANGE": "ToS Change Without Notice",
-      "CON_FEATURE": "Missing Promised Feature",
-      "CON_DOWNTIME": "Unannounced Downtime",
-      "CON_DEGRADE": "Service Degradation",
-      "CON_REGION": "Regional Service Restriction",
-      "AI_BIAS": "AI Bias",
-      "AI_HALLUC": "AI Hallucination Causing Harm",
-      "AI_IDENTITY": "Undisclosed AI Identity",
-      "AI_PRIVACY": "AI Privacy Violation",
-      "AI_DECISION": "Automated Decision Without Appeal",
-      "AI_EXPLAINAB": "No AI Explainability",
-      "AI_CONSENT": "AI Training Consent Missing",
-      "AI_SAFETY": "AI Safety Failure"
+      "ACC-01": "Account Suspension",
+      "ACC-02": "Account Block",
+      "ACC-03": "Account Lockout",
+      "ACC-04": "Account Deletion",
+      "ACC-05": "Data Access Denial",
+      "ACC-06": "Identity Verification Failure",
+      "ACC-07": "Account Recovery Refusal",
+      "DAT-01": "Data Breach",
+      "DAT-02": "GDPR Violation",
+      "DAT-03": "AI Training Without Consent",
+      "DAT-04": "Unauthorized Data Sharing",
+      "DAT-05": "Excessive Data Retention",
+      "DAT-06": "Data Export Refusal",
+      "DAT-07": "Right-to-Erasure Refusal",
+      "FIN-01": "Unauthorized Charge",
+      "FIN-02": "Refund Refusal",
+      "FIN-03": "Billing Error",
+      "FIN-04": "Subscription Trap",
+      "FIN-05": "Account Freeze with Funds",
+      "FIN-06": "Hidden Fees",
+      "FIN-07": "Price Manipulation",
+      "SUP-01": "No Support Response",
+      "SUP-02": "Bot Loop / No Human",
+      "SUP-03": "Support Misinformation",
+      "SUP-04": "Excessive Support Delay",
+      "SUP-05": "Language Barrier in Support",
+      "SUP-06": "Ticket Closed Without Resolution",
+      "SUP-07": "Inaccessible Support Channel",
+      "CON-01": "Arbitrary Content Moderation",
+      "CON-02": "Content Removal Without Notice",
+      "CON-03": "ToS Change Without Notice",
+      "CON-04": "Missing Promised Feature",
+      "CON-05": "Unannounced Downtime",
+      "CON-06": "Service Degradation",
+      "CON-07": "Regional Service Restriction",
+      "AI-01": "AI Bias",
+      "AI-02": "AI Hallucination Causing Harm",
+      "AI-03": "Undisclosed AI Identity",
+      "AI-04": "AI Privacy Violation",
+      "AI-05": "Automated Decision Without Appeal",
+      "AI-06": "No AI Explainability",
+      "AI-07": "AI Safety Failure"
+    },
+    "metricsL1": {
+      "title": "Level 1 — Universal Metrics",
+      "subtitle": "Seven metrics applied to every incident, regardless of category.",
+      "metrics": {
+        "M1": {
+          "name": "Terms of Service Clarity",
+          "desc": "Are the relevant ToS clauses written in plain, unambiguous language accessible to a non-lawyer user?"
+        },
+        "M2": {
+          "name": "Prior Notification",
+          "desc": "Was the user notified in advance about the action, change or risk that led to the incident?"
+        },
+        "M3": {
+          "name": "Explicit Motivation",
+          "desc": "Did the company provide a specific, verifiable reason rather than a generic policy reference?"
+        },
+        "M4": {
+          "name": "Appeal Process",
+          "desc": "Is there a documented, reachable appeal channel with defined steps and timelines?"
+        },
+        "M5": {
+          "name": "Response Time",
+          "desc": "How fast did the company acknowledge and substantively address the incident?"
+        },
+        "M6": {
+          "name": "Data / Money Restitution",
+          "desc": "Were lost data, access or funds restored to the user when applicable?"
+        },
+        "M7": {
+          "name": "Public Precedent",
+          "desc": "Is there a documented public precedent (court ruling, regulator decision, journalistic record) for similar cases?"
+        }
+      }
+    },
+    "metricsL2": {
+      "title": "Level 2 — Contextual Metrics",
+      "subtitle": "Additional metrics activated automatically based on the incident type (e.g. AI explainability for AI-06, GDPR articles for DAT-02).",
+      "note": "Level 2 metrics are weighted lower than Level 1 in the composite score and serve to refine, not replace, the universal evaluation."
+    },
+    "models": {
+      "western": {
+        "name": "Western AI",
+        "model": "OpenAI ChatGPT",
+        "desc": "Represents the perspective of large US-based commercial AI models trained predominantly on Western-aligned data and policy."
+      },
+      "asian": {
+        "name": "Asian AI",
+        "model": "DeepSeek",
+        "desc": "Represents the perspective of leading Asian commercial AI models, offering a contrasting cultural and regulatory framing."
+      },
+      "opensource": {
+        "name": "Open Source AI",
+        "model": "Meta Llama",
+        "desc": "Represents the perspective of community-auditable open-weight models, used as an independent control."
+      },
+      "weightNote": "The composite score weights the three models equally (1/3 each). Divergences between models are surfaced explicitly rather than averaged away."
     }
   },
   "score": {
-    "title": "Trust Score",
-    "composite": "Composite Score",
+    "badge": "Trust Score",
+    "compositeScore": "Composite Score",
+    "compositeDesc": "Weighted average across the three AI models and the two metric levels for every analyzed incident.",
+    "scoreBreakdown": "Score Breakdown",
     "lastUpdated": "Last updated",
     "totalIncidents": "Total incidents analyzed",
-    "models": {
-      "openai": "Western AI (ChatGPT)",
-      "deepseek": "Asian AI (DeepSeek)",
-      "llama": "Open Source (Llama)"
-    },
-    "scoreNote": "SIMULATED — scores based on public information, not live API connectors",
+    "scoreNote": "SIMULATED — scores are based on public information, not live API connectors.",
     "reasoning": "Reasoning"
   },
-  "incidents": {
-    "title": "Report an Incident",
-    "subtitle": "Help us build a transparent record of how companies treat their users",
+  "incident": {
+    "hero": {
+      "badge": "Report",
+      "title": "Report an Incident",
+      "subtitle": "Help us build a transparent public record of how companies treat their users."
+    },
     "form": {
       "company": "Company",
       "companyPlaceholder": "Select a company",

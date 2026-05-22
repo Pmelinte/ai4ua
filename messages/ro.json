@@ -7,83 +7,155 @@
     "about": "Despre"
   },
   "transparency": {
-    "title": "Taxonomia Incidentelor",
-    "subtitle": "42 tipuri de incidente în 6 categorii",
-    "categories": {
-      "ACC": "Acces Cont",
-      "DAT": "Date & Confidențialitate",
-      "FIN": "Financiar",
-      "SUP": "Suport",
-      "CON": "Conținut & Serviciu",
-      "AI": "Specific AI"
+    "hero": {
+      "badge": "Metodologie",
+      "title": "Taxonomia Incidentelor & Cadrul de Transparență",
+      "subtitle": "42 de tipuri de incidente în 6 categorii, evaluate prin două niveluri de metrici și trei modele AI."
     },
-    "level1Title": "Nivel 1 — Metrici Universale",
-    "level1Desc": "Aplicate la fiecare incident indiferent de tip",
-    "level2Title": "Nivel 2 — Metrici Contextuale",
-    "level2Desc": "Activate automat în funcție de tipul incidentului",
-    "metrics": {
-      "tos_clarity": "Claritatea Termenilor de Serviciu",
-      "prior_notification": "Notificare Prealabilă",
-      "explicit_motivation": "Motivație Explicită",
-      "appeal_process": "Proces de Contestație",
-      "response_time": "Timp de Răspuns",
-      "restitution": "Restituire Date / Bani",
-      "public_precedent": "Precedent Public"
+    "categories": {
+      "ACC": {
+        "name": "Acces Cont",
+        "desc": "Suspendări, blocări, pierderea accesului, ștergeri și alte restricții asupra capacității utilizatorului de a-și accesa propriul cont."
+      },
+      "DAT": {
+        "name": "Date & Confidențialitate",
+        "desc": "Breșe de date, prelucrări ilegale, încălcări GDPR, antrenare AI nedezvăluită și alte eșecuri de gestionare a datelor."
+      },
+      "FIN": {
+        "name": "Financiar",
+        "desc": "Taxări neautorizate, refuzuri de rambursare, erori de facturare, capcane de abonament și fonduri blocate."
+      },
+      "SUP": {
+        "name": "Suport",
+        "desc": "Suport care nu răspunde, bucle de bot fără escaladare la om, dezinformare și bariere lingvistice."
+      },
+      "CON": {
+        "name": "Conținut & Serviciu",
+        "desc": "Moderare arbitrară, modificări ToS nedezvăluite, funcționalități lipsă, indisponibilități și restricții regionale."
+      },
+      "AI": {
+        "name": "Specific AI",
+        "desc": "Părtinire, halucinații cu prejudiciu, identitate AI nedezvăluită, decizii automate fără drept de contestație și eșecuri de siguranță."
+      }
     },
     "incidentTypes": {
-      "ACC_SUSPEND": "Suspendare Cont",
-      "ACC_BLOCK": "Blocare Cont",
-      "ACC_LOCK": "Blocare Acces Cont",
-      "ACC_DELETE": "Ștergere Cont",
-      "ACC_ACCESS": "Refuz Acces la Date",
-      "DAT_BREACH": "Breșă de Date",
-      "DAT_GDPR": "Încălcare GDPR",
-      "DAT_AI_TRAIN": "Antrenare AI Fără Consimțământ",
-      "DAT_SHARE": "Partajare Neautorizată de Date",
-      "DAT_RETAIN": "Reținere Excesivă de Date",
-      "FIN_UNAUTH": "Taxă Neautorizată",
-      "FIN_REFUND": "Refuz Rambursare",
-      "FIN_BILLING": "Eroare de Facturare",
-      "FIN_SUBSCRIP": "Problemă Abonament",
-      "FIN_FREEZE": "Blocare Cont cu Fonduri",
-      "SUP_NORESPONSE": "Fără Răspuns Suport",
-      "SUP_BOT": "Buclă Bot / Fără Om",
-      "SUP_MISINFO": "Dezinformare din Suport",
-      "SUP_DELAY": "întârziere Excesivă Suport",
-      "SUP_LANG": "Barieră Lingvistică în Suport",
-      "CON_MODERATION": "Moderare Arbitrară Conținut",
-      "CON_REMOVAL": "Înlăturare Conținut Fără Notificare",
-      "CON_TOS_CHANGE": "Modificare ToS Fără Notificare",
-      "CON_FEATURE": "Funcționalitate Promisă Lipsă",
-      "CON_DOWNTIME": "Indisponibilitate Neanunată",
-      "CON_DEGRADE": "Degradare Serviciu",
-      "CON_REGION": "Restricție Regională Serviciu",
-      "AI_BIAS": "Părtinire AI",
-      "AI_HALLUC": "Halucinație AI cu Prejudiciu",
-      "AI_IDENTITY": "Identitate AI Nedezvăluită",
-      "AI_PRIVACY": "Încălcare Confidențialitate AI",
-      "AI_DECISION": "Decizie Automatizată Fără Contestație",
-      "AI_EXPLAINAB": "Fără Explicabilitate AI",
-      "AI_CONSENT": "Consimțământ Antrenare AI Lipsă",
-      "AI_SAFETY": "Eśec Siguranță AI"
+      "ACC-01": "Suspendare cont",
+      "ACC-02": "Blocare cont",
+      "ACC-03": "Pierdere acces cont",
+      "ACC-04": "Ștergere cont",
+      "ACC-05": "Refuz acces la date",
+      "ACC-06": "Eșec verificare identitate",
+      "ACC-07": "Refuz recuperare cont",
+      "DAT-01": "Breșă de date",
+      "DAT-02": "Încălcare GDPR",
+      "DAT-03": "Antrenare AI fără consimțământ",
+      "DAT-04": "Partajare neautorizată de date",
+      "DAT-05": "Reținere excesivă de date",
+      "DAT-06": "Refuz export de date",
+      "DAT-07": "Refuz drept la ștergere",
+      "FIN-01": "Taxare neautorizată",
+      "FIN-02": "Refuz rambursare",
+      "FIN-03": "Eroare de facturare",
+      "FIN-04": "Capcană de abonament",
+      "FIN-05": "Blocare cont cu fonduri",
+      "FIN-06": "Taxe ascunse",
+      "FIN-07": "Manipulare de preț",
+      "SUP-01": "Fără răspuns de la suport",
+      "SUP-02": "Buclă bot / fără om",
+      "SUP-03": "Dezinformare din suport",
+      "SUP-04": "Întârziere excesivă a suportului",
+      "SUP-05": "Barieră lingvistică în suport",
+      "SUP-06": "Ticket închis fără rezolvare",
+      "SUP-07": "Canal de suport inaccesibil",
+      "CON-01": "Moderare arbitrară de conținut",
+      "CON-02": "Înlăturare conținut fără notificare",
+      "CON-03": "Modificare ToS fără notificare",
+      "CON-04": "Funcționalitate promisă lipsă",
+      "CON-05": "Indisponibilitate neanunțată",
+      "CON-06": "Degradare a serviciului",
+      "CON-07": "Restricție regională a serviciului",
+      "AI-01": "Părtinire AI",
+      "AI-02": "Halucinație AI cu prejudiciu",
+      "AI-03": "Identitate AI nedezvăluită",
+      "AI-04": "Încălcare confidențialitate AI",
+      "AI-05": "Decizie automată fără contestație",
+      "AI-06": "Fără explicabilitate AI",
+      "AI-07": "Eșec de siguranță AI"
+    },
+    "metricsL1": {
+      "title": "Nivel 1 — Metrici Universale",
+      "subtitle": "Șapte metrici aplicate fiecărui incident, indiferent de categorie.",
+      "metrics": {
+        "M1": {
+          "name": "Claritatea Termenilor de Serviciu",
+          "desc": "Sunt clauzele ToS relevante scrise într-un limbaj clar, neambiguu, accesibil unui utilizator non-jurist?"
+        },
+        "M2": {
+          "name": "Notificare Prealabilă",
+          "desc": "A fost utilizatorul notificat în avans despre acțiunea, schimbarea sau riscul care a dus la incident?"
+        },
+        "M3": {
+          "name": "Motivație Explicită",
+          "desc": "A oferit compania un motiv specific și verificabil, nu doar o referință generică la politici?"
+        },
+        "M4": {
+          "name": "Proces de Contestație",
+          "desc": "Există un canal de contestație documentat, accesibil, cu pași și termene definite?"
+        },
+        "M5": {
+          "name": "Timp de Răspuns",
+          "desc": "Cât de rapid a confirmat și a tratat compania incidentul în mod substanțial?"
+        },
+        "M6": {
+          "name": "Restituire Date / Bani",
+          "desc": "Au fost restituite utilizatorului datele, accesul sau fondurile pierdute, când a fost cazul?"
+        },
+        "M7": {
+          "name": "Precedent Public",
+          "desc": "Există un precedent public documentat (hotărâre judecătorească, decizie a unui reglementator, înregistrare jurnalistică) pentru cazuri similare?"
+        }
+      }
+    },
+    "metricsL2": {
+      "title": "Nivel 2 — Metrici Contextuale",
+      "subtitle": "Metrici suplimentare activate automat în funcție de tipul incidentului (ex. explicabilitate AI pentru AI-06, articole GDPR pentru DAT-02).",
+      "note": "Metricile de Nivel 2 au pondere mai mică decât cele de Nivel 1 în scorul compozit și servesc la rafinarea, nu la înlocuirea evaluării universale."
+    },
+    "models": {
+      "western": {
+        "name": "AI Vestic",
+        "model": "OpenAI ChatGPT",
+        "desc": "Reprezintă perspectiva marilor modele AI comerciale din SUA, antrenate predominant pe date și politici aliniate occidental."
+      },
+      "asian": {
+        "name": "AI Asiatic",
+        "model": "DeepSeek",
+        "desc": "Reprezintă perspectiva principalelor modele AI comerciale asiatice, oferind o încadrare culturală și de reglementare diferită."
+      },
+      "opensource": {
+        "name": "AI Open Source",
+        "model": "Meta Llama",
+        "desc": "Reprezintă perspectiva modelelor cu greutăți deschise, auditabile de comunitate, folosite ca un control independent."
+      },
+      "weightNote": "Scorul compozit ponderează egal cele trei modele (1/3 fiecare). Divergențele dintre modele sunt evidențiate explicit, nu mediate."
     }
   },
   "score": {
-    "title": "Scor de Încredere",
-    "composite": "Scor Compozit",
+    "badge": "Scor de Încredere",
+    "compositeScore": "Scor Compozit",
+    "compositeDesc": "Medie ponderată pe cele trei modele AI și pe cele două niveluri de metrici, pentru fiecare incident analizat.",
+    "scoreBreakdown": "Detalierea Scorului",
     "lastUpdated": "Ultima actualizare",
     "totalIncidents": "Total incidente analizate",
-    "models": {
-      "openai": "AI Vestic (ChatGPT)",
-      "deepseek": "AI Asiatic (DeepSeek)",
-      "llama": "Open Source (Llama)"
-    },
-    "scoreNote": "SIMULAT — scoruri bazate pe informații publice, nu conectori API live",
+    "scoreNote": "SIMULAT — scorurile sunt bazate pe informații publice, nu pe conectori API live.",
     "reasoning": "Justificare"
   },
-  "incidents": {
-    "title": "Raportează un Incident",
-    "subtitle": "Ajută-ne să construim un registru transparent al modului în care companiile îśi tratează utilizatorii",
+  "incident": {
+    "hero": {
+      "badge": "Raportare",
+      "title": "Raportează un Incident",
+      "subtitle": "Ajută-ne să construim un registru public transparent al modului în care companiile își tratează utilizatorii."
+    },
     "form": {
       "company": "Companie",
       "companyPlaceholder": "Selectează o companie",
@@ -95,7 +167,7 @@
       "descriptionPlaceholder": "Descrie incidentul în detaliu...",
       "date": "Data Incidentului",
       "evidence": "Link-uri Dovezi (opțional)",
-      "evidencePlaceholder": "URL-uri spre capturi de ecran, emailuri, etc.",
+      "evidencePlaceholder": "URL-uri spre capturi de ecran, emailuri etc.",
       "email": "Email Contact (opțional)",
       "emailPlaceholder": "Te putem contacta pentru detalii suplimentare",
       "submit": "Trimite Raportul",
