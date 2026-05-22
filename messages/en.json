@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Home",
+    "transparency": "Transparency",
+    "score": "Company Scores",
+    "report": "Report Incident",
+    "about": "About"
+  },
+  "transparency": {
+    "title": "Incident Taxonomy",
+    "subtitle": "42 incident types across 6 categories",
+    "categories": {
+      "ACC": "Account Access",
+      "DAT": "Data & Privacy",
+      "FIN": "Financial",
+      "SUP": "Support",
+      "CON": "Content & Service",
+      "AI": "AI-Specific"
+    },
+    "level1Title": "Level 1 — Universal Metrics",
+    "level1Desc": "Applied to every incident regardless of type",
+    "level2Title": "Level 2 — Contextual Metrics",
+    "level2Desc": "Automatically activated based on incident type",
+    "metrics": {
+      "tos_clarity": "Terms of Service Clarity",
+      "prior_notification": "Prior Notification",
+      "explicit_motivation": "Explicit Motivation",
+      "appeal_process": "Appeal Process",
+      "response_time": "Response Time",
+      "restitution": "Data / Money Restitution",
+      "public_precedent": "Public Precedent"
+    },
+    "incidentTypes": {
+      "ACC_SUSPEND": "Account Suspension",
+      "ACC_BLOCK": "Account Block",
+      "ACC_LOCK": "Account Lockout",
+      "ACC_DELETE": "Account Deletion",
+      "ACC_ACCESS": "Data Access Denial",
+      "DAT_BREACH": "Data Breach",
+      "DAT_GDPR": "GDPR Violation",
+      "DAT_AI_TRAIN": "AI Training Without Consent",
+      "DAT_SHARE": "Unauthorized Data Sharing",
+      "DAT_RETAIN": "Excessive Data Retention",
+      "FIN_UNAUTH": "Unauthorized Charge",
+      "FIN_REFUND": "Refund Refusal",
+      "FIN_BILLING": "Billing Error",
+      "FIN_SUBSCRIP": "Subscription Issue",
+      "FIN_FREEZE": "Account Freeze with Funds",
+      "SUP_NORESPONSE": "No Support Response",
+      "SUP_BOT": "Bot Loop / No Human",
+      "SUP_MISINFO": "Support Misinformation",
+      "SUP_DELAY": "Excessive Support Delay",
+      "SUP_LANG": "Language Barrier in Support",
+      "CON_MODERATION": "Arbitrary Content Moderation",
+      "CON_REMOVAL": "Content Removal Without Notice",
+      "CON_TOS_CHANGE": "ToS Change Without Notice",
+      "CON_FEATURE": "Missing Promised Feature",
+      "CON_DOWNTIME": "Unannounced Downtime",
+      "CON_DEGRADE": "Service Degradation",
+      "CON_REGION": "Regional Service Restriction",
+      "AI_BIAS": "AI Bias",
+      "AI_HALLUC": "AI Hallucination Causing Harm",
+      "AI_IDENTITY": "Undisclosed AI Identity",
+      "AI_PRIVACY": "AI Privacy Violation",
+      "AI_DECISION": "Automated Decision Without Appeal",
+      "AI_EXPLAINAB": "No AI Explainability",
+      "AI_CONSENT": "AI Training Consent Missing",
+      "AI_SAFETY": "AI Safety Failure"
+    }
+  },
+  "score": {
+    "title": "Trust Score",
+    "composite": "Composite Score",
+    "lastUpdated": "Last updated",
+    "totalIncidents": "Total incidents analyzed",
+    "models": {
+      "openai": "Western AI (ChatGPT)",
+      "deepseek": "Asian AI (DeepSeek)",
+      "llama": "Open Source (Llama)"
+    },
+    "scoreNote": "SIMULATED — scores based on public information, not live API connectors",
+    "reasoning": "Reasoning"
+  },
+  "incidents": {
+    "title": "Report an Incident",
+    "subtitle": "Help us build a transparent record of how companies treat their users",
+    "form": {
+      "company": "Company",
+      "companyPlaceholder": "Select a company",
+      "incidentType": "Incident Type",
+      "incidentTypePlaceholder": "Select incident type",
+      "title": "Title",
+      "titlePlaceholder": "Brief description of what happened",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe the incident in detail...",
+      "date": "Date of Incident",
+      "evidence": "Evidence Links (optional)",
+      "evidencePlaceholder": "URLs to screenshots, emails, etc.",
+      "email": "Contact Email (optional)",
+      "emailPlaceholder": "We may contact you for follow-up",
+      "submit": "Submit Report",
+      "submitting": "Submitting...",
+      "success": "Report submitted successfully. Thank you.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "back": "Back",
+    "learnMore": "Learn more",
+    "category": "Category",
+    "type": "Type"
+  }
+}
