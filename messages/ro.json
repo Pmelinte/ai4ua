@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "transparency": "Transparență",
+    "score": "Scoruri Companii",
+    "report": "Raportează Incident",
+    "about": "Despre"
+  },
+  "transparency": {
+    "title": "Taxonomia Incidentelor",
+    "subtitle": "42 tipuri de incidente în 6 categorii",
+    "categories": {
+      "ACC": "Acces Cont",
+      "DAT": "Date & Confidențialitate",
+      "FIN": "Financiar",
+      "SUP": "Suport",
+      "CON": "Conținut & Serviciu",
+      "AI": "Specific AI"
+    },
+    "level1Title": "Nivel 1 — Metrici Universale",
+    "level1Desc": "Aplicate la fiecare incident indiferent de tip",
+    "level2Title": "Nivel 2 — Metrici Contextuale",
+    "level2Desc": "Activate automat în funcție de tipul incidentului",
+    "metrics": {
+      "tos_clarity": "Claritatea Termenilor de Serviciu",
+      "prior_notification": "Notificare Prealabilă",
+      "explicit_motivation": "Motivație Explicită",
+      "appeal_process": "Proces de Contestație",
+      "response_time": "Timp de Răspuns",
+      "restitution": "Restituire Date / Bani",
+      "public_precedent": "Precedent Public"
+    },
+    "incidentTypes": {
+      "ACC_SUSPEND": "Suspendare Cont",
+      "ACC_BLOCK": "Blocare Cont",
+      "ACC_LOCK": "Blocare Acces Cont",
+      "ACC_DELETE": "Ștergere Cont",
+      "ACC_ACCESS": "Refuz Acces la Date",
+      "DAT_BREACH": "Breșă de Date",
+      "DAT_GDPR": "Încălcare GDPR",
+      "DAT_AI_TRAIN": "Antrenare AI Fără Consimțământ",
+      "DAT_SHARE": "Partajare Neautorizată de Date",
+      "DAT_RETAIN": "Reținere Excesivă de Date",
+      "FIN_UNAUTH": "Taxă Neautorizată",
+      "FIN_REFUND": "Refuz Rambursare",
+      "FIN_BILLING": "Eroare de Facturare",
+      "FIN_SUBSCRIP": "Problemă Abonament",
+      "FIN_FREEZE": "Blocare Cont cu Fonduri",
+      "SUP_NORESPONSE": "Fără Răspuns Suport",
+      "SUP_BOT": "Buclă Bot / Fără Om",
+      "SUP_MISINFO": "Dezinformare din Suport",
+      "SUP_DELAY": "întârziere Excesivă Suport",
+      "SUP_LANG": "Barieră Lingvistică în Suport",
+      "CON_MODERATION": "Moderare Arbitrară Conținut",
+      "CON_REMOVAL": "Înlăturare Conținut Fără Notificare",
+      "CON_TOS_CHANGE": "Modificare ToS Fără Notificare",
+      "CON_FEATURE": "Funcționalitate Promisă Lipsă",
+      "CON_DOWNTIME": "Indisponibilitate Neanunată",
+      "CON_DEGRADE": "Degradare Serviciu",
+      "CON_REGION": "Restricție Regională Serviciu",
+      "AI_BIAS": "Părtinire AI",
+      "AI_HALLUC": "Halucinație AI cu Prejudiciu",
+      "AI_IDENTITY": "Identitate AI Nedezvăluită",
+      "AI_PRIVACY": "Încălcare Confidențialitate AI",
+      "AI_DECISION": "Decizie Automatizată Fără Contestație",
+      "AI_EXPLAINAB": "Fără Explicabilitate AI",
+      "AI_CONSENT": "Consimțământ Antrenare AI Lipsă",
+      "AI_SAFETY": "Eśec Siguranță AI"
+    }
+  },
+  "score": {
+    "title": "Scor de Încredere",
+    "composite": "Scor Compozit",
+    "lastUpdated": "Ultima actualizare",
+    "totalIncidents": "Total incidente analizate",
+    "models": {
+      "openai": "AI Vestic (ChatGPT)",
+      "deepseek": "AI Asiatic (DeepSeek)",
+      "llama": "Open Source (Llama)"
+    },
+    "scoreNote": "SIMULAT — scoruri bazate pe informații publice, nu conectori API live",
+    "reasoning": "Justificare"
+  },
+  "incidents": {
+    "title": "Raportează un Incident",
+    "subtitle": "Ajută-ne să construim un registru transparent al modului în care companiile îśi tratează utilizatorii",
+    "form": {
+      "company": "Companie",
+      "companyPlaceholder": "Selectează o companie",
+      "incidentType": "Tip Incident",
+      "incidentTypePlaceholder": "Selectează tipul incidentului",
+      "title": "Titlu",
+      "titlePlaceholder": "Scurtă descriere a ce s-a întâmplat",
+      "description": "Descriere",
+      "descriptionPlaceholder": "Descrie incidentul în detaliu...",
+      "date": "Data Incidentului",
+      "evidence": "Link-uri Dovezi (opțional)",
+      "evidencePlaceholder": "URL-uri spre capturi de ecran, emailuri, etc.",
+      "email": "Email Contact (opțional)",
+      "emailPlaceholder": "Te putem contacta pentru detalii suplimentare",
+      "submit": "Trimite Raportul",
+      "submitting": "Se trimite...",
+      "success": "Raport trimis cu succes. Mulțumim.",
+      "error": "Ceva nu a funcționat. Te rog încearcă din nou."
+    }
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "back": "Înapoi",
+    "learnMore": "Află mai mult",
+    "category": "Categorie",
+    "type": "Tip"
+  }
+}
