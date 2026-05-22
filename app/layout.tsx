@@ -25,13 +25,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span>AI4UA</span>
             </a>
             <div className="nav-links">
-              <a href="#score">Trust Score</a>
-              <a href="#report">Report Incident</a>
-              <a href="#how">How It Works</a>
-              <a href="#companies">For Companies</a>
-              <a href="#transparency">Transparency</a>
+              <a href="/score/anthropic">Trust Score</a>
+              <a href="/incidents/new">Report Incident</a>
+              <a href="/#how">How It Works</a>
+              <a href="/#companies">For Companies</a>
+              <a href="/transparency">Transparency</a>
             </div>
-            <a href="#report" className="nav-cta">Report an Incident</a>
+            <a href="/incidents/new" className="nav-cta">Report an Incident</a>
           </div>
         </nav>
         {children}
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="footer-inner">
             <div className="footer-copy">© 2026 AI4UA · Artificial Intelligence for User Aid · ai4ua.com</div>
             <div className="footer-links">
-              <a href="#transparency">Methodology</a>
+              <a href="/transparency">Methodology</a>
               <a href="#">Privacy</a>
               <a href="#">API</a>
               <a href="#">Contact</a>
